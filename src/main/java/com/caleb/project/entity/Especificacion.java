@@ -9,9 +9,6 @@ import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
-
 
 /**
  * The persistent class for the tbl_especificacion database table.
@@ -21,8 +18,6 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 @Table(name="tbl_especificacion")
 public class Especificacion implements Serializable {
 	private static final long serialVersionUID = 1L;
-
-	private ObjectMapper mapper = new ObjectMapper();
 	
 	@Id
 	private int id;
