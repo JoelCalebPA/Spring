@@ -12,7 +12,7 @@ import com.caleb.project.entity.Venta;
 import com.caleb.project.repository.VentaRepository;
 
 @RestController
-@RequestMapping("/venta")
+@RequestMapping("/api/venta")
 public class VentaRestController {
 
 	private final VentaRepository repository;

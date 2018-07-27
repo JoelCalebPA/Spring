@@ -20,7 +20,7 @@ import com.caleb.project.repository.ProductoRepository;
  */
 
 @RestController
-@RequestMapping("/productos")
+@RequestMapping("/api/productos")
 public class ProductoRestController {
 
 	private final ProductoRepository repository;

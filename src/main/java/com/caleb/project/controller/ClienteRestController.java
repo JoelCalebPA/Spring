@@ -13,7 +13,7 @@ import com.caleb.project.entity.Cliente;
 import com.caleb.project.repository.ClienteRepository;
 
 @RestController
-@RequestMapping("/cliente")
+@RequestMapping("/api/cliente")
 public class ClienteRestController {
 
 	private final ClienteRepository repository;
