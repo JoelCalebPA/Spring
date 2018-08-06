@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+	<h1>Hello World!!!</h1>
+	
+	<div ng-controller="ctrl">
+		<table>
+			<tbody>
+				<tr *ngFor="let p of ctrl.productos">
+					<td><span ng-bind="p.idProducto"></span></td>
+					<td>{{p.descripcion}}</td>
+					<td>{{p.precio}}</td>
+					<td>{{p.stock}}</td>
+					<td>{{p.marca.nombre}}</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+	<script src="/js/controller.js"></script>
+</body>
+</html>

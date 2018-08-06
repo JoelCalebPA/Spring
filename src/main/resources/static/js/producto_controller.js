@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('myApp').controller('ProductoController', ['$scope', 'ProductoService', function($scope, ProductoService) {
+angular.module('myApp').controller('ProductoController', ['ProductoService'], function($scope, ProductoService) {
     
     var self = this;
     
@@ -25,4 +25,4 @@ angular.module('myApp').controller('ProductoController', ['$scope', 'ProductoSer
         );
     }
 	
-}]);
+});
